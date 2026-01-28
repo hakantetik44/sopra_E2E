@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'node' // Assurez-vous que Node.js est configuré dans Manage Jenkins -> Global Tool Configuration
+        nodejs 'Node' // Mis à jour pour correspondre au nom par défaut souvent utilisé dans Jenkins
     }
 
     environment {
@@ -39,8 +39,11 @@ pipeline {
 
         stage('Generate Report') {
             steps {
-                // Nécessite l'installation du plugin Allure dans Jenkins
-                allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+                script {
+                    // Cette étape génère le rapport Allure à partir des résultats stockés dans 'allure-results'
+                    // Assurez-vous que le plugin 'Allure' est installé dans Jenkins
+                    allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+                }
             }
         }
     }
