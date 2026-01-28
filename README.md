@@ -1,6 +1,6 @@
 # <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sopra_Steria_logo.svg" width="250"/> 
 
-# Excellence en Automatisation QA
+# Sopra_E2E Automatisation QA
 
 ![Playwright](https://img.shields.io/badge/Playwright-v1.58.0-31C653?style=flat&logo=playwright&logoColor=white)
 ![Cucumber](https://img.shields.io/badge/Cucumber-v12.6.0-23D96C?style=flat&logo=cucumber&logoColor=white)

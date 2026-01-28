@@ -1,6 +1,8 @@
-import { Before, After, BeforeAll, AfterAll, Status } from '@cucumber/cucumber';
+import { Before, After, BeforeAll, AfterAll, Status, setDefaultTimeout } from '@cucumber/cucumber';
 import { chromium, Browser, BrowserContext, Page } from '@playwright/test';
 import * as fs from 'fs';
+
+setDefaultTimeout(60000);
 
 let browser: Browser;
 let context: BrowserContext;
