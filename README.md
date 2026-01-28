@@ -59,6 +59,8 @@ npm run test
 Pour un mode interactif avec Time Travel et débogage visuel (UI Mode) :
 ```bash
 npm run ui
+# Ou directement via Playwright :
+npx playwright test --ui
 ```
 
 ### Lancer la Démo Complète (Rapport Allure)
