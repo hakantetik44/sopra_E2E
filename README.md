@@ -1,91 +1,74 @@
-# <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sopra_Steria_logo.svg" width="300"/> 
+# <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sopra_Steria_logo.svg" width="250"/> 
 
-# 🚀 Sopra Steria - Excellence en Automatisation QA
+# Excellence en Automatisation QA
 
-![Quality Assurance](https://img.shields.io/badge/Quality-Assurance-blue?style=for-the-badge&logo=probot)
-![Playwright](https://img.shields.io/badge/Playwright-31C653?style=for-the-badge&logo=playwright&logoColor=white)
-![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-
----
-
-## 🎭 Présentation du Projet
-Ce projet propulse l'automatisation des tests à un niveau supérieur pour **Sopra Steria Real Estate Software**. Alliant **performance**, **robustesse** et **clarté**, ce framework garantit une excellence opérationnelle pour la gestion de millions de logements.
-
-> "Nous transformons la complexité en simplicité grâce à une automatisation intelligente."
+![Playwright](https://img.shields.io/badge/Playwright-v1.58.0-31C653?style=flat&logo=playwright&logoColor=white)
+![Cucumber](https://img.shields.io/badge/Cucumber-v12.6.0-23D96C?style=flat&logo=cucumber&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-v5.9.3-3178C6?style=flat&logo=typescript&logoColor=white)
+![Allure](https://img.shields.io/badge/Allure-v3.4.5-yellow?style=flat&logo=allure&logoColor=black)
 
 ---
 
-## 🌟 Points Forts du Framework
-
-| Fonctionnalité | Description |
-| :--- | :--- |
-| **🛠️ Architecture POM** | Séparation stricte entre locateurs, pages et steps pour une maintenance aisée. |
-| **🌐 Tests Hybrides** | Couverture complète de l'**UI** (Web) et de l'**API** (REST/GraphQL). |
-| **🎬 Evidence de Test** | Enregistrements **vidéo**, captures d'écran et logs détaillés intégrés. |
-| **📊 Reporting Allure** | Dashboards haute fidélité avec analyse des tendances. |
-| **🎯 BDD (Gherkin)** | Scénarios rédigés en **Français** pour une collaboration optimale. |
+## 📖 Introduction
+Ce framework est dédié à l'automatisation des tests pour **Sopra Steria Real Estate Software**. Il est conçu pour être performant, maintenable et facile à intégrer dans un cycle de développement agile.
 
 ---
 
-## 🏗️ Structure de l'Écosystème
+## 🛠️ Caractéristiques du Framework
 
-```bash
-sopra_E2E/
-├── 🏛️ base/             # Fondations (Actions partagées)
-├── 📍 locators/         # GPS du DOM (Sélecteurs robustes)
-├── 📄 pages/            # Intelligence métier (POM)
-├── 🧪 tests/
-│   ├── 📝 features/     # Scénarios Gherkin (FR)
-│   └── ⚙️ steps/        # Mécanique des tests
-├── 🔗 hooks/            # Cycle de vie & Vidéos
-└── 📈 allure-results/   # Data brute pour Allure
+- **Architecture Page Object Model (POM)** : Une structure claire pour une maintenance simplifiée.
+- **Tests Bout-en-Bout (E2E)** : Couverture des interfaces web et des API.
+- **Preuves de Test** : 
+  - 🎥 **Vidéos** de chaque exécution UI.
+  - 📸 **Captures d'écran** automatiques en cas d'échec.
+- **BDD avec Cucumber** : Scénarios rédigés en français pour une meilleure lisibilité métier.
+- **Reporting Allure** : Rapports détaillés et visuels pour une analyse rapide.
+
+---
+
+## 📂 Organisation du Projet
+
+```text
+├── base/                # Classes de base (Actions communes)
+├── locators/            # Centralisation des sélecteurs
+├── pages/               # Page Objects (Logique métier)
+├── tests/
+│   ├── features/        # Scénarios Gherkin (FR)
+│   └── steps/           # Définitions des étapes
+├── hooks/               # Cycle de vie des tests & Vidéos
+└── allure-results/      # Résultats bruts de test
 ```
 
 ---
 
-## � Guide Rapide de Démarrage
+## 🚀 Installation & Exécution
 
-### 1️⃣ Préparation
+### Installation
 ```bash
-# Installation des dépendances
 npm install
-
-# Armer les navigateurs
 npx playwright install chromium
 ```
 
-### 2️⃣ Action !
+### Lancer la Démo
 ```bash
-# Lancer la démo complète (Tests + Rapport Allure)
 npm run demo
 ```
 
 ---
 
-## 💡 Stack Technologique de Pointe
+## 💡 Stack Technologique
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" width="40" height="40" />
-  <img src="https://playwright.dev/img/playwright-logo.svg" width="40" height="40" />
-  <img src="https://raw.githubusercontent.com/cucumber/cucumber-expressions/main/cucumber.png" width="40" height="40" />
-  <img src="https://raw.githubusercontent.com/nodejs/node/main/doc/api/assets/logo.svg" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript" />
+  <img src="https://playwright.dev/img/playwright-logo.svg" width="40" height="40" alt="Playwright" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cucumber/cucumber-plain.svg" width="40" height="40" alt="Cucumber" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="Node.js" />
 </p>
 
 ---
 
-## � Espace de Reporting
-
-Le framework est configuré pour générer un rapport **Allure** visuel. 
-- **Dashboards interactifs**
-- **Historique des runs**
-- **Pièces jointes (Vidéos, Screenshots)**
+## 📊 Reporting Allure
+Le rapport Allure fournit une visibilité complète sur la qualité du produit, avec l'historique des exécutions et les preuves visuelles intégrées directement dans les étapes de test.
 
 ---
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/render?type=waving&color=auto&height=200&section=footer&text=SOPRA%20STERIA%20QA&fontSize=40" width="100%" />
-</p>
-
----
-> 📧 *Contact : Équipe QA Sopra Steria Real Estate*
+> Sopra Steria - Excellence Opérationnelle
