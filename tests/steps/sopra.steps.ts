@@ -23,7 +23,7 @@ When('je recherche {string}', async function ({ }, term: string) {
 });
 
 Then('les résultats de recherche doivent être pertinents', async function ({ page }) {
-    await page.waitForTimeout(2000);
+    await sopraPage.waitForSearchResults();
     const url = page.url();
     expect(url).toMatch(/search|recherche/);
 });

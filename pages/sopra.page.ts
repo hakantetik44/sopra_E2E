@@ -32,4 +32,8 @@ export class SopraPage extends BasePage {
     async isLogoVisible() {
         return await this.isVisible(this.locators.mainLogo);
     }
+
+    async waitForSearchResults() {
+        await this.waitForVisible(this.locators.searchResultsContainer);
+    }
 }

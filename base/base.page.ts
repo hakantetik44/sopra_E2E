@@ -35,6 +35,10 @@ export class BasePage {
         }
     }
 
+    async waitForVisible(locator: Locator, timeout: number = 10000) {
+        await locator.waitFor({ state: 'visible', timeout });
+    }
+
     async waitForElement(locator: Locator) {
         await locator.waitFor({ state: 'attached' });
     }

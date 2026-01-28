@@ -5,6 +5,7 @@ export class SopraLocators {
     readonly searchIcon: Locator;
     readonly searchInput: Locator;
     readonly mainLogo: Locator;
+    readonly searchResultsContainer: Locator;
     readonly footerContent: Locator;
 
     constructor(private page: Page) {
@@ -15,6 +16,7 @@ export class SopraLocators {
         this.searchIcon = this.page.locator('a[href="/recherche"]');
         this.searchInput = this.page.locator('input.ui-autocomplete-input');
         this.mainLogo = this.page.locator('a.primary-menu__logo');
+        this.searchResultsContainer = this.page.locator('.search-results, .results-list, .recherche-results'); // Robust multi-selector for results
 
         // Footer
         this.footerContent = this.page.locator('footer');
