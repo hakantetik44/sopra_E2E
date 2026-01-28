@@ -49,15 +49,21 @@ npm install
 npx playwright install chromium
 ```
 
-### Lancer la Démo
+### Exécuter tous les tests (Console)
+Pour lancer les tests UI et API directement dans le terminal :
 ```bash
-npm run demo
+npm run test
 ```
 
 ### Lancer l'interface UI Interactive
-Pour un mode interactif avec Time Travel et débogage visuel :
+Pour un mode interactif avec Time Travel et débogage visuel (UI Mode) :
 ```bash
 npm run ui
+```
+
+### Lancer la Démo Complète (Rapport Allure)
+```bash
+npm run demo
 ```
 
 ---
