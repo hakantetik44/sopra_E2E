@@ -21,7 +21,6 @@ export class SopraPage extends BasePage {
     }
 
     async performSearch(term: string) {
-        // Some sites might need a click on search icon first
         if (await this.isVisible(this.locators.searchIcon)) {
             await this.click(this.locators.searchIcon);
         }
