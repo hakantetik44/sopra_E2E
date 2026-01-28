@@ -54,6 +54,12 @@ npx playwright install chromium
 npm run demo
 ```
 
+### Lancer l'interface UI Interactive
+Pour un mode interactif avec Time Travel et débogage visuel :
+```bash
+npm run ui
+```
+
 ---
 
 ## 💡 Stack Technologique
