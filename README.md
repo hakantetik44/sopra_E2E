@@ -1,90 +1,91 @@
-# 🚀 Sopra Steria - Framework d'Automatisation QA E2E
+# <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sopra_Steria_logo.svg" width="300"/> 
 
-![Sopra Steria](https://www.soprasteria.fr/ResourcePackages/SopraSteria/assets/dist/images/logo-sopra-steria.svg)
+# 🚀 Sopra Steria - Excellence en Automatisation QA
 
-Ce projet est un framework de tests automatisés de pointe conçu pour **Sopra Steria Real Estate Software**. Il permet de garantir la qualité et l'excellence opérationnelle des solutions logicielles immobilières qui gèrent plus de 140 millions de m² et 3,5 millions de logements.
-
-## 🌟 Points Forts
-
-- **Technologie de pointe** : Basé sur **Playwright** et **Cucumber (BDD)**.
-- **Architecture Robuste** : Utilisation stricte du **Page Object Model (POM)** avec séparation des locateurs.
-- **Support Multi-Couches** : Tests combinés **UI** et **API (REST/GraphQL)**.
-- **Reporting Premium** : Rapports **Allure** dynamiques avec captures d'écran et enregistrements vidéo.
-- **Shift-Left** : Conçu pour s'intégrer tôt dans le cycle de développement.
+![Quality Assurance](https://img.shields.io/badge/Quality-Assurance-blue?style=for-the-badge&logo=probot)
+![Playwright](https://img.shields.io/badge/Playwright-31C653?style=for-the-badge&logo=playwright&logoColor=white)
+![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 ---
 
-## 🏗️ Architecture du Projet
+## 🎭 Présentation du Projet
+Ce projet propulse l'automatisation des tests à un niveau supérieur pour **Sopra Steria Real Estate Software**. Alliant **performance**, **robustesse** et **clarté**, ce framework garantit une excellence opérationnelle pour la gestion de millions de logements.
 
-Le framework est structuré pour une maintenabilité maximale :
+> "Nous transformons la complexité en simplicité grâce à une automatisation intelligente."
 
-```text
-├── base/                # Classes de base (BasePage) pour les actions communes
-├── locators/            # Centralisation des sélecteurs (CSS, Shadow DOM)
-├── pages/               # Page Objects contenant la logique métier
-├── tests/
-│   ├── features/        # Scénarios de test en Gherkin (Français)
-│   └── steps/           # Définitions des étapes (Step Definitions)
-├── hooks/               # Cycle de vie des tests (Setup/Teardown, Vidéos)
-└── allure-results/      # Résultats bruts pour le reporting
+---
+
+## 🌟 Points Forts du Framework
+
+| Fonctionnalité | Description |
+| :--- | :--- |
+| **🛠️ Architecture POM** | Séparation stricte entre locateurs, pages et steps pour une maintenance aisée. |
+| **🌐 Tests Hybrides** | Couverture complète de l'**UI** (Web) et de l'**API** (REST/GraphQL). |
+| **🎬 Evidence de Test** | Enregistrements **vidéo**, captures d'écran et logs détaillés intégrés. |
+| **📊 Reporting Allure** | Dashboards haute fidélité avec analyse des tendances. |
+| **🎯 BDD (Gherkin)** | Scénarios rédigés en **Français** pour une collaboration optimale. |
+
+---
+
+## 🏗️ Structure de l'Écosystème
+
+```bash
+sopra_E2E/
+├── 🏛️ base/             # Fondations (Actions partagées)
+├── 📍 locators/         # GPS du DOM (Sélecteurs robustes)
+├── 📄 pages/            # Intelligence métier (POM)
+├── 🧪 tests/
+│   ├── 📝 features/     # Scénarios Gherkin (FR)
+│   └── ⚙️ steps/        # Mécanique des tests
+├── 🔗 hooks/            # Cycle de vie & Vidéos
+└── 📈 allure-results/   # Data brute pour Allure
 ```
 
 ---
 
-## 🛠️ Installation
+## � Guide Rapide de Démarrage
 
-1. **Cloner le projet**
-   ```bash
-   git clone <repository-url>
-   cd sopra_E2E
-   ```
-
-2. **Installer les dépendances**
-   ```bash
-   npm install
-   ```
-
-3. **Installer les navigateurs Playwright**
-   ```bash
-   npx playwright install chromium
-   ```
-
----
-
-## 🚀 Exécution des Tests
-
-### Lancer la Démo Complète
-Cette commande exécute tous les tests (UI & API), nettoie les anciens rapports et ouvre le nouveau rapport Allure :
+### 1️⃣ Préparation
 ```bash
+# Installation des dépendances
+npm install
+
+# Armer les navigateurs
+npx playwright install chromium
+```
+
+### 2️⃣ Action !
+```bash
+# Lancer la démo complète (Tests + Rapport Allure)
 npm run demo
 ```
 
-### Commandes Individuelles
-- **Exécuter les tests uniquement** : `npm run test`
-- **Générer le rapport Allure** : `npm run report:generate`
-- **Ouvrir le rapport Allure** : `npm run report:open`
+---
+
+## 💡 Stack Technologique de Pointe
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" width="40" height="40" />
+  <img src="https://playwright.dev/img/playwright-logo.svg" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/cucumber/cucumber-expressions/main/cucumber.png" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/nodejs/node/main/doc/api/assets/logo.svg" width="40" height="40" />
+</p>
 
 ---
 
-## 📊 Reporting & Visibilité
+## � Espace de Reporting
 
-- **Dashboards Allure** : Une vue claire de la santé du projet (Tendances, Graphiques).
-- **Enregistrements Vidéo** : Chaque scénario `@ui` est enregistré pour une analyse facile des régressions.
-- **Captures d'écran** : En cas d'échec, une capture d'écran est automatiquement jointe à l'étape correspondante.
-- **Mode Visuel** : La démo s'exécute en mode "Headed" (navigateur visible) avec un ralenti (`slowMo`) pour une démonstration fluide.
-
----
-
-## 💡 Stack Technologique
-
-| Outil | Usage |
-| :--- | :--- |
-| **Playwright** | Moteur d'automatisation navigateur & API |
-| **Cucumber** | Framework BDD pour une lecture fonctionnelle |
-| **TypeScript** | Langage pour un code typé et sécurisé |
-| **Allure** | Reporting visuel et interactif |
-| **Node.js** | Environnement d'exécution |
+Le framework est configuré pour générer un rapport **Allure** visuel. 
+- **Dashboards interactifs**
+- **Historique des runs**
+- **Pièces jointes (Vidéos, Screenshots)**
 
 ---
 
-> "Accompagner nos clients dans leurs transformations et les aider à relever leurs enjeux environnementaux, humains et technologiques." — **Sopra Steria**
+<p align="center">
+  <img src="https://capsule-render.vercel.app/render?type=waving&color=auto&height=200&section=footer&text=SOPRA%20STERIA%20QA&fontSize=40" width="100%" />
+</p>
+
+---
+> 📧 *Contact : Équipe QA Sopra Steria Real Estate*
